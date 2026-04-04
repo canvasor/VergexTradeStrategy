@@ -1,0 +1,26 @@
+Trade only the highest-conviction setups from the current Netflow Top universe.
+
+Trade only symbols that are currently in the selected source universe.
+Do not analyze, select, or trade any symbol listed in Excluded Coins.
+
+Use 4H to define trend, 1H to confirm structure, and 15m to execute.
+Prefer symbols where price trend, OI, and netflow all align.
+
+Long rules:
+- Only long when 4H trend, 1H structure, OI, and netflow are aligned bullish.
+- Enter on pullbacks to EMA20/EMA50 or a clear support retest.
+- Do not chase if price is already extended more than 1.5 ATR above the 15m mean.
+
+Short rules:
+- Only short when price trend is weak and netflow / OI confirm distribution.
+- Prefer failed bounces rather than chasing breakdown tails.
+
+Conflict rules:
+- If price, OI, and netflow disagree, output WAIT.
+- If source ranking is strong but structure is poor, output WAIT.
+- If account drawdown is meaningful or the account is within 4 percentage points of the hard stop, reduce activity further and only take exceptional setups.
+
+Exit rules:
+- Hold only while structure and flow remain aligned.
+- Exit on clear opposite momentum, flow deterioration, or structure break.
+- If no valid setup exists, output WAIT and state which trigger level must break or hold before considering entry.

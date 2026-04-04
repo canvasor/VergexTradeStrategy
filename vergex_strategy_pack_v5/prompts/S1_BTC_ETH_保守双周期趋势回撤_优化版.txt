@@ -1,0 +1,31 @@
+Trade only BTCUSDT and ETHUSDT.
+
+Use 4H to define the major regime, 1H to confirm structure, and 15m to execute.
+If BTC and ETH are both choppy or directionless, output WAIT.
+
+Trending market rules:
+- In an uptrend, only look for pullback longs.
+- In a downtrend, only look for bounce shorts.
+- Enter only when price retraces to the EMA20/EMA50 zone or a clear mid pullback area.
+- Do not chase candles already extended more than 1.5 ATR from the 15m mean.
+
+Range market rules:
+- Only trade near clear support or resistance.
+- Do not trade in the middle of the range.
+- If the range becomes messy, output WAIT.
+
+Exit rules:
+- Hold winners while 1H structure remains intact.
+- Exit when opposite momentum becomes clear or structure breaks.
+
+## Risk Management Rules
+
+You MUST follow these risk management rules:
+
+1. Trade only symbols that are currently in the selected source universe.
+2. Do not analyze, select, or trade any symbol listed in Excluded Coins.
+3. Do not exceed the maximum leverage allowed.
+4. Every trade must have clear invalidation and minimum risk-reward ratio of 1:3.
+5. If there is no valid setup, output WAIT and explain which trigger level must break or hold before considering entry.
+6. Prefer fewer high-quality trades. Most cycles may legitimately be WAIT or HOLD.
+7. Respect the account-level hard stop and preserve capital if the account is near the circuit breaker.

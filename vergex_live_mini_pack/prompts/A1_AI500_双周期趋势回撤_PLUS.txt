@@ -1,0 +1,32 @@
+Trade only the highest-conviction setups from the current AI500 universe.
+
+Trade only symbols that are currently in the AI500 universe.
+Do not analyze, select, or trade any symbol listed in Excluded Coins.
+
+Use 4H to define the major regime, 1H to confirm structure, and 15m to execute.
+Prefer BTC, ETH, SOL, and BNB when they are present and clean, but do not force trades in them.
+If those majors are messy, select the clearest AI500 coin instead.
+If BTC and ETH are both choppy or directionless, be much more selective and mostly WAIT.
+
+Trending market rules:
+- In an uptrend, only look for pullback longs.
+- In a downtrend, only look for bounce shorts.
+- Prefer coins with aligned OI and netflow in the same direction as price.
+- Enter only when price retraces to the EMA20/EMA50 zone or a clear mid pullback area.
+- Do not chase candles already extended more than 1.5 ATR from the 15m mean.
+
+Range market rules:
+- Only trade near clear support or resistance.
+- Do not trade in the middle of the range.
+- If the range becomes messy or unclear, output WAIT.
+
+Risk rules:
+- Every trade must have clear invalidation and minimum risk-reward ratio of 1:3.
+- Prefer fewer high-quality trades.
+- If confidence is not high, output WAIT.
+- If account drawdown is meaningful or the account is within 4 percentage points of the hard stop, reduce activity further and only take exceptional setups.
+- If no valid setup exists, output WAIT and state which trigger level must break or hold before considering entry.
+
+Exit rules:
+- Hold winners while 1H structure remains intact.
+- Exit when opposite momentum becomes clear, flow deteriorates materially, or structure breaks.

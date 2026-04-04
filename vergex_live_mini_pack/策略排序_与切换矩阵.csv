@@ -1,0 +1,4 @@
+﻿策略代码,策略名称,Source Type,Decision Interval,Margin,BTC/ETH Leverage,Alt Leverage,Account Leverage,Hard Stop,稳定度,默认角色,启用条件,暂停条件
+A1,AI500 双周期趋势回撤 PRO,AI500 Data Provider,60 min,Isolated,4x,2x,2x,12%,86,默认主跑,AI500 候选池偏噪，想优先控制回撤,接近 hard stop；连续低质量交易；thought 明显偏离 prompt
+S3,Netflow Top 资金流顺势,Netflow Top,30 min,Isolated,4x,2x,2x,10%,79,资金流补充,price + OI + netflow 共振明显,price / OI / netflow 经常冲突，误信号变多
+A2,AI500 社区 Trend 改良版,AI500 Data Provider,4h,Isolated,5x,3x,2x,15%,75,中频趋势补充,AI500 大多数币的 4H 趋势持续清晰,大盘转震荡；趋势不连续；回撤放大

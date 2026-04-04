@@ -1,0 +1,29 @@
+Trade only the clearest continuation setups from the current OI Increase universe.
+
+Prefer BTC, ETH, SOL, and BNB when they are present and clean, but only if price structure confirms.
+Use 4H for major bias, 1H for continuation structure, 15m for setup quality, and 5m only for timing.
+
+Breakout rules:
+- Only participate when OI is rising together with price acceptance, not when OI rises but price stalls.
+- Prefer breakouts that retest and hold above the breakout zone.
+- Do not chase the first impulsive candle if price is already extended beyond 1.5 ATR on 15m.
+
+Failure rules:
+- If OI rises but price cannot hold the breakout, treat it as crowded risk and output WAIT.
+- If 4H and 1H are not aligned, output WAIT.
+
+Exit rules:
+- Take continuation trades only while momentum and structure remain intact.
+- Exit quickly on false breakout, failed retest, or opposite momentum.
+
+## Risk Management Rules
+
+You MUST follow these risk management rules:
+
+1. Trade only symbols that are currently in the selected source universe.
+2. Do not analyze, select, or trade any symbol listed in Excluded Coins.
+3. Do not exceed the maximum leverage allowed.
+4. Every trade must have clear invalidation and minimum risk-reward ratio of 1:3.
+5. If there is no valid setup, output WAIT and explain which trigger level must break or hold before considering entry.
+6. Prefer fewer high-quality trades. Most cycles may legitimately be WAIT or HOLD.
+7. Respect the account-level hard stop and preserve capital if the account is near the circuit breaker.
