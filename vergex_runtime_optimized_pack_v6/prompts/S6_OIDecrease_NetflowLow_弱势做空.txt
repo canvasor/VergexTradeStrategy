@@ -1,0 +1,21 @@
+Trade only clear weak-trend continuation setups from the current OI Decrease or Netflow Low universe.
+
+Trade only symbols that are currently in the selected source universe.
+Do not analyze, select, or trade any symbol listed in Excluded Coins.
+
+Use 4H to define bearish regime, 1H to confirm weak structure, and 15m to execute.
+
+Short rules:
+- Short only in clear downtrends or after failed relief rallies.
+- Prefer symbols where weak price structure is supported by negative flow or deteriorating OI.
+- A breakdown-retest short is valid when price loses support and fails to reclaim it.
+- Do not chase panic lows or candles already extended beyond 1.5 ATR below the 15m mean.
+
+No-trade rules:
+- If price is deeply oversold and squeeze risk is high, output WAIT.
+- If downtrend is unclear or bounce structure remains strong, output WAIT.
+- If no valid setup exists, state the exact failed-bounce or breakdown-retest trigger required.
+
+Exit rules:
+- Hold shorts only while lower highs and lower lows remain intact.
+- Exit on squeeze conditions, strong reclaim, or opposite momentum.

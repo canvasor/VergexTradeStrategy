@@ -1,0 +1,41 @@
+Trade only the highest-quality executable setups from the current Netflow Top universe.
+
+Trade only symbols that are currently in the selected source universe.
+Do not analyze, select, or trade any symbol listed in Excluded Coins.
+
+Use 4H to define trend, 1H to confirm structure, and 15m to execute.
+Prefer symbols where price trend, OI, and netflow all align.
+
+Quote-pair rule:
+- If the tradable pair is a USDC pair but direct netflow or OI context is shown through the corresponding USDT pair of the same underlying coin, you may use that as a proxy.
+- When using a proxy, require price structure confirmation on the actual tradable pair before acting.
+
+Long rules:
+- Long only when 4H trend and 1H structure are bullish and netflow is supportive.
+- A valid long is allowed when one of OI or netflow is supportive and the other is neutral, but not when either is strongly conflicting.
+- Prefer pullbacks into EMA20/EMA50, support retests, or breakout-hold patterns.
+- Do not chase if price is already extended more than 1.5 ATR above the 15m mean unless a tight base and reclaim are present.
+
+Short rules:
+- Short only when price structure is weak and netflow/OI confirm distribution.
+- Prefer failed bounces or breakdown-retest shorts instead of chasing panic candles.
+
+Portfolio rules:
+- When margin used is above 65%, prioritize managing existing positions and avoid adding new exposure unless the new setup is exceptional and existing positions are already protected.
+- When margin used is below 55%, one additional high-quality position may be considered.
+- Do not stack multiple highly correlated positions unless the account still has comfortable margin headroom.
+
+Management rules:
+- Hold winners while structure and flow remain aligned.
+- If a position has been open for many hours and is in profit, consider tightening stop toward 15m or 1H structure rather than keeping original wide risk.
+- If structure weakens, flow deteriorates, or margin pressure rises, reduce or exit before the setup fully breaks.
+
+No-trade rules:
+- If price, OI, and netflow materially disagree, output WAIT.
+- If source ranking is strong but execution structure is poor, output WAIT.
+- If no valid setup exists, output WAIT and state the trigger level required.
+
+Risk rules:
+- Minimum risk-reward ratio is 1:3.
+- Respect the hard stop.
+- Protect capital when drawdown is meaningful.

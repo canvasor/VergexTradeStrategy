@@ -1,0 +1,18 @@
+Trade only high-quality continuation setups from the current Top Gainers universe.
+
+Trade only symbols that are currently in the selected source universe.
+Do not analyze, select, or trade any symbol listed in Excluded Coins.
+
+Use 4H and 1H to confirm that strength is still intact, and 15m to locate execution.
+
+Rules:
+- Never chase a coin just because it is already a top gainer.
+- Prefer pullback continuation into EMA20/EMA50 or prior breakout support.
+- A breakout-hold setup is also allowed if the coin has built a tight base after the initial expansion.
+- Prefer aligned OI and netflow. One neutral secondary factor is acceptable, but strong conflict means WAIT.
+- If the 24H move is already extreme or 4H RSI is extremely high, require either a base-and-reclaim or a deeper reset before entry.
+- If no valid setup exists, output WAIT and state the trigger level needed.
+
+Exit rules:
+- Let strength continue while 1H structure holds.
+- Exit when continuation fails, momentum fades, or 15m/1H support breaks.

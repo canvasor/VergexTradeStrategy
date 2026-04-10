@@ -1,0 +1,10 @@
+﻿排名,策略ID,策略名称,稳定度/工程置信度,Source Type,Decision Interval,Position Mode,Max BTC/ETH Lev,Max Alt Lev,Max Account Lev,Hard Stop,适用场景,本次升级重点,主要风险提醒,Prompt 文件
+1,S3,Netflow Top 资金流顺势 PRO v2,82,Netflow Top,30 min,Isolated,4x,2x,2x,10%,当前主跑首选；已有稳定实盘样本,统一 price / OI / netflow；新增 USDT→USDC 底层资产代理；新增 margin regime,平均保证金偏高，>65% 以管仓为主,prompts/S3_NetflowTop_资金流顺势_PRO_v2.txt
+2,A1,AI500 双周期趋势回撤 PLUS v2,80,AI500 Data Provider,30 min,Isolated,4x,2x,2x,12%,AI500 主跑增强版,从单一 pullback 升级到 pullback + base breakout/reclaim；减少过度 WAIT,不能保证每轮开单，但显著降低长期零交易概率,prompts/A1_AI500_双周期趋势回撤_PLUS_v2.txt
+3,A2,AI500 社区 Trend PRO v2,77,AI500 Data Provider,60 min,Isolated,5x,3x,2x,15%,AI500 趋势更清晰时,趋势 continuation + breakout retest 双 archetype,趋势断续、震荡市会退化,prompts/A2_AI500_社区Trend_PRO_v2.txt
+4,S1,BTC/ETH 保守双周期趋势回撤 运行优化版,76,Custom,60 min,Isolated,3x,2x,1x,8%,主流币稳态策略,只做 BTC/ETH，但允许 breakout retest，不再只认深回撤,开单频率仍会低于 AI500/S3,prompts/S1_BTC_ETH_保守双周期趋势回撤_运行优化版.txt
+5,S4,OI Increase 突破延续 运行优化版,73,OI Increase,15 min,Isolated,4x,2x,2x,9%,偏强势突破阶段,强化 breakout-retest 执行,假突破阶段容易退化,prompts/S4_OIIncrease_突破延续_运行优化版.txt
+6,S2,AI500 保守轮动 运行优化版,72,AI500 Data Provider,45 min,Isolated,4x,2x,2x,12%,想在 AI500 中适度扩散,比 A1 更分散，但保留 practical alignment,候选池质量决定上限,prompts/S2_AI500_保守轮动_运行优化版.txt
+7,S5,Top Gainers 强势回踩接力 运行优化版,68,Top Gainers,30 min,Isolated,4x,2x,2x,10%,强势延续行情,允许 high-base breakout，但仍要求 base/retest,晚期高潮段风险大,prompts/S5_TopGainers_强势回踩接力_运行优化版.txt
+8,S6,OI Decrease / Netflow Low 弱势做空 运行优化版,66,OI Decrease / Netflow Low,30 min,Isolated,4x,2x,2x,10%,弱势或下跌环境,failed bounce + breakdown retest,空头挤压风险高,prompts/S6_OIDecrease_NetflowLow_弱势做空_运行优化版.txt
+9,S7,Top Losers 超跌反弹试验 运行优化版,58,Top Losers,30 min,Isolated,3x,2x,1x,8%,实验策略,只做 exhaustion + base + reclaim,最不稳定，仓位最小,prompts/S7_TopLosers_超跌反弹试验_运行优化版.txt

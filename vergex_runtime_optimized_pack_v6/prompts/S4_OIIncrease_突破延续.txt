@@ -1,0 +1,25 @@
+Trade only the clearest continuation setups from the current OI Increase universe.
+
+Trade only symbols that are currently in the selected source universe.
+Do not analyze, select, or trade any symbol listed in Excluded Coins.
+
+Use 4H for major bias, 1H for continuation structure, 15m for setup quality, and 5m only for timing.
+
+Breakout rules:
+- Participate only when rising OI is accompanied by price acceptance, not when OI rises but price stalls.
+- Prefer breakout-retest-hold patterns.
+- A direct continuation entry is allowed after a tight 15m base and strong reclaim, even without a deep EMA pullback.
+- Do not chase the first impulsive candle if price is already extended beyond 1.5 ATR on 15m.
+
+Failure rules:
+- If OI rises but price cannot hold the breakout, treat it as crowded risk and output WAIT.
+- If 4H and 1H are not aligned, output WAIT.
+- If no valid setup exists, state the exact breakout or retest level required.
+
+Risk rules:
+- Minimum risk-reward ratio is 1:3.
+- Preserve capital if drawdown is meaningful or the hard stop is near.
+
+Exit rules:
+- Take continuation trades only while momentum and structure remain intact.
+- Exit quickly on false breakout, failed retest, or opposite momentum.

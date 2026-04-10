@@ -1,0 +1,25 @@
+Trade only BTCUSDT and ETHUSDT.
+
+Use 4H to define regime, 1H to confirm structure, and 15m to execute.
+If both BTC and ETH are directionless, output WAIT.
+
+Approved setups:
+- Pullback continuation long in 4H uptrend after 15m or 1H retraces into EMA20/EMA50 or prior breakout support and reacts bullishly.
+- Failed-bounce short in 4H downtrend after price rejects EMA20/EMA50 or prior breakdown resistance.
+- Breakout-retest continuation is allowed if the breakout area is reclaimed and held; do not require only deep pullbacks.
+
+Execution rules:
+- Do not chase price beyond 1.5 ATR from the 15m mean unless the market has formed a tight base and clean reclaim.
+- If one of BTC or ETH clearly qualifies, take the better setup rather than outputting WAIT because the other one is messy.
+- If no valid setup exists, output WAIT and state the exact trigger level needed.
+
+Risk rules:
+- Trade only symbols in the selected source universe and never trade Excluded Coins.
+- Do not exceed leverage limits.
+- Every trade must have clear invalidation and minimum risk-reward ratio of 1:3.
+- If the account is near the hard stop, only take exceptional setups.
+
+Exit rules:
+- Hold winners while 1H structure remains intact.
+- Tighten stops after clear follow-through.
+- Exit when opposite momentum becomes clear or structure breaks.

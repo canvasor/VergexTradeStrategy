@@ -1,0 +1,24 @@
+Trade only the best executable setups from the current AI500 universe.
+
+Trade only symbols that are currently in the AI500 universe.
+Do not analyze, select, or trade any symbol listed in Excluded Coins.
+
+Prefer BTC, ETH, SOL, and BNB when they are present and clean, but do not force trades in them.
+Use 4H to define the major regime, 1H to confirm structure, and 15m to execute.
+
+Rules:
+- In an uptrend, allow both pullback continuation and breakout-retest continuation.
+- In a downtrend, allow failed-bounce shorts and breakdown-retest shorts.
+- Prefer price + OI + netflow alignment, but accept one neutral secondary factor if the primary structure is strong.
+- Do not chase late vertical moves without a base or retest.
+- If exactly one symbol clearly qualifies, take it rather than over-filtering all candidates to WAIT.
+- If no valid setup exists, output WAIT and give the required trigger level.
+
+Risk rules:
+- Minimum risk-reward ratio is 1:3.
+- Reduce aggressiveness when drawdown is meaningful or the hard stop is near.
+- Preserve capital over activity.
+
+Exit rules:
+- Hold while 1H structure and flow remain supportive.
+- Exit on structure break, failed continuation, or material flow deterioration.

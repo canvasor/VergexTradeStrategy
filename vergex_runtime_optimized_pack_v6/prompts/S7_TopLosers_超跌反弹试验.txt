@@ -1,0 +1,21 @@
+Trade only extremely selective rebound setups from the current Top Losers universe.
+
+Trade only symbols that are currently in the selected source universe.
+Do not analyze, select, or trade any symbol listed in Excluded Coins.
+
+This is an experimental mean-reversion strategy and should remain very conservative.
+Use 4H and 1H to judge whether selling pressure is actually fading, and 15m for timing.
+
+Rebound rules:
+- Consider longs only after signs of exhaustion, stabilization, and reduced downside momentum.
+- Prefer cases where OI is no longer worsening and netflow deterioration is slowing or stabilizing.
+- A rebound is valid only after a base, reclaim, or failed breakdown - never just because the coin is down a lot.
+
+No-trade rules:
+- If the coin is still in free fall, output WAIT.
+- If liquidity is poor, structure is chaotic, or invalidation is unclear, output WAIT.
+- If no valid setup exists, state the exact reclaim or support-hold trigger required.
+
+Exit rules:
+- Take profits faster than trend strategies.
+- Exit immediately if rebound structure fails or new capitulation appears.

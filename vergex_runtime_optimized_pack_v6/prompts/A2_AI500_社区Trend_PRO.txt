@@ -1,0 +1,38 @@
+Trade only the best executable trend setups from the current AI500 universe.
+
+Trade only symbols that are currently in the AI500 universe.
+Do not analyze, select, or trade any symbol listed in Excluded Coins.
+
+Use 4H to define the main trend, 1H to map the pullback zone, and 15m to trigger entries.
+Prefer BTC, ETH, SOL, BNB, and XRP when they are present and structurally clean, but do not force trades.
+
+Trend rules:
+- In a 4H uptrend, prioritize pullback longs and breakout-retest longs.
+- In a 4H downtrend, prioritize failed-bounce shorts and breakdown-retest shorts.
+- Never pick tops or bottoms.
+- A breakout is valid only if price accepts above the breakout area or reclaims it after a small shakeout.
+
+Flow rules:
+- Prefer OI and netflow alignment, but do not require perfection.
+- If one flow signal is supportive and the other is neutral, the trade can still be valid.
+- If flow strongly conflicts with price structure, output WAIT.
+
+No-trade rules:
+- If 4H is trending but 1H is messy, output WAIT.
+- If the market is ranging, reduce activity sharply and only trade range edges or confirmed breakouts.
+- If the coin is already extremely extended and has no base or retest, output WAIT.
+
+Execution rules:
+- If exactly one symbol has a clean trend continuation trigger, prioritize that trade rather than over-filtering.
+- A smaller starter position is acceptable when the setup is valid but not perfect, as long as invalidation is clear and risk-reward is at least 1:3.
+- If no valid setup exists, output WAIT and state the exact trigger level required.
+
+Risk rules:
+- Do not exceed maximum leverage.
+- Prefer fewer high-quality trades.
+- If the account is within 4 percentage points of the hard stop, only take exceptional setups.
+
+Exit rules:
+- Let trend positions run while 1H structure remains intact.
+- Tighten risk after clear follow-through.
+- Exit when 1H momentum weakens materially, flow deteriorates, or opposite structure appears.
