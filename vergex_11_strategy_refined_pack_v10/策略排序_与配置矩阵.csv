@@ -1,0 +1,8 @@
+﻿策略ID,策略名称,方向,风险偏好,Source Type,Decision Interval,Position Mode,BTC/ETH Leverage,Altcoin Leverage,Max Account Leverage,Hard Stop,K-Line,Indicators,Stats,工程置信度,用途
+A1,AI500 顺势持有｜保守做多,做多,保守,AI500 Data Provider,60 min,Isolated Margin,5x,3x,2x,10%,15m / 1h / 4h,RSI14 / MACD / BB,OI / Netflow,84,AI500 主跑保守做多。用 4H 看趋势、1H 看结构、15m 优化入场，强调少交易、拿趋势、回踩确认后再上。
+A2,AI500 冲刺确认｜激进做多,做多,激进,AI500 Data Provider,15 min,Cross Margin,5x,3x,2x,8%,15m / 1h / 4h,RSI14 / MACD / BB,OI / Netflow,77,AI500 激进主跑做多。融合之前 B2 和 F1 的优点，强调“看到强信号就做，但必须先确认不是纯情绪乱冲”。
+L1,Netflow Top 资金流顺势｜做多,做多,中等,Netflow Top,30 min,Isolated Margin,4x,2x,2x,10%,15m / 1h / 4h,RSI14 / MACD / BB,OI / Netflow,82,利用 Netflow Top 的资金流强势池做顺势延续。更适合在主线轮动明确时做最强票的回踩与续涨。
+L2,Top Gainers 强势延续｜做多,做多,中高,Top Gainers,15 min,Isolated Margin,5x,3x,2x,10%,15m / 1h / 4h,RSI14 / MACD / BB,OI / Netflow,73,做强者恒强，不做情绪末端。适合强趋势行情里的龙头币回踩接力与突破后续涨。
+S1,Netflow Low / OI Decrease 弱势延续｜做空,做空,中等,Netflow Low,30 min,Isolated Margin,4x,2x,2x,10%,15m / 1h / 4h,RSI14 / MACD / BB,OI / Netflow,78,做最清晰的弱势延续和反抽失败，不做末端恐慌追空。
+S2,Top Gainers 衰竭做空｜优化版,做空,中高,Top Gainers,5 min,Cross Margin,5x,3x,3x,12%,5m / 15m / 4h,BB / RSI14 / MACD,OI / Netflow,74,基于社区 F2 优化。核心是“先等涨不动，再做空”，不是对涨幅榜见涨就空。
+G1,自适应多空伪网格｜动态版,多空自适应,中等,Custom,30 min,Isolated Margin,3x,2x,2x,10%,15m / 1h / 4h,BB / RSI14 / MACD,OI / Netflow,68,保留伪网格思路，但做成单策略自适应多空。只在区间明确时启动，突破后立即停用网格逻辑。
